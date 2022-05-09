@@ -1,0 +1,46 @@
+#header{
+    background-color: red;
+    // position: relative;
+    .logo{
+        h1{
+            color: white;
+        }
+    }
+    .nav-menu{
+
+        ul{
+            position: relative;
+            li{
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    padding: 20px;
+                    display: block;
+                }
+                &.home{
+                    // position: relative;
+                    &:hover{
+                        .big-home{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                    .big-home{
+                        transition: 0.3s ease-in-out;
+                        background-color: rgb(140, 255, 0);
+                        position: absolute;
+                        top: 100%;
+                        left: 0%;
+                        width:600px;
+                        padding: 20px;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+            }
+
+        }
+    }
+}
